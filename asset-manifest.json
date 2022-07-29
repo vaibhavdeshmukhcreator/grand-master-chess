@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/grand-master-chess/static/css/main.64a3cf2e.css",
+    "main.js": "/grand-master-chess/static/js/main.f58c124a.js",
+    "static/js/787.1e004568.chunk.js": "/grand-master-chess/static/js/787.1e004568.chunk.js",
+    "index.html": "/grand-master-chess/index.html",
+    "main.64a3cf2e.css.map": "/grand-master-chess/static/css/main.64a3cf2e.css.map",
+    "main.f58c124a.js.map": "/grand-master-chess/static/js/main.f58c124a.js.map",
+    "787.1e004568.chunk.js.map": "/grand-master-chess/static/js/787.1e004568.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64a3cf2e.css",
+    "static/js/main.f58c124a.js"
+  ]
+}
