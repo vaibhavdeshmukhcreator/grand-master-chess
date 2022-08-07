@@ -2,71 +2,132 @@
   text-align: center;
 }
 
-.question-card {
-  /* Center the div  */
-  margin: 0 auto;
-
-  /* Dimensions  */
-  width: 80%; /* Can be in percentage also. */
-  height: auto;
-
-  /* Visual  */
-  background-color: gray;
-  padding: 16px;
-  border-radius: 16px;
-  color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+.button-row {
+  width: 100%;
+  text-align: center;
 }
 
-ul {
-  list-style: none;
+.option {
+  display: inline-block;
 }
 
-li {
-  margin-top: 8px;
-  background-color: darkgray;
-  padding: 16px;
-  border: 3px solid white;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-.question-text {
-  color: darkblue;
-  font-size: 24px;
-}
-
-/* Final Results  */
-
-.final-results {
-  /* Center the div  */
-  margin: 0 auto;
-
-  /* Dimensions  */
-  width: 50%; /* Can be in percentage also. */
-  height: auto;
-  margin-top: 64px;
-
-  /* Visual  */
-  background-color: gray;
-  padding: 16px;
-  border-radius: 16px;
-  color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-}
-
-button {
-  background-color: red; /* Green */
+.option-button-default {
+  background-color: #008cba;
   border: none;
   color: white;
-  padding: 16px 24px;
+  height: 100px;
+  width: 200px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 40px;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
 
-  border-radius: 24px;
+.option-button-green {
+  background-color: green;
+  border: none;
+  color: white;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.option-button-yellow {
+  background-color: #ffa000;
+  border: none;
+  color: white;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.option-button-red {
+  background-color: red;
+  border: none;
+  color: white;
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.default-button {
+  background-color: black;
+  border: none;
+  color: white;
+  height: 60px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+header {
+  background: black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.content{
+  padding: 16px;
 }
