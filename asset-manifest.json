@@ -1,15 +1,37 @@
 {
   "files": {
-    "main.css": "/grand-master-chess/static/css/main.64a3cf2e.css",
-    "main.js": "/grand-master-chess/static/js/main.f58c124a.js",
+    "main.css": "/grand-master-chess/static/css/main.c72eb5f1.css",
+    "main.js": "/grand-master-chess/static/js/main.37d5ccaa.js",
     "static/js/787.1e004568.chunk.js": "/grand-master-chess/static/js/787.1e004568.chunk.js",
+    "static/media/ep02-q09.png": "/grand-master-chess/static/media/ep02-q09.74a2ca7243e60d934f52.png",
+    "static/media/ep02-q08.png": "/grand-master-chess/static/media/ep02-q08.8239fc25e9cd06848d62.png",
+    "static/media/ep02-q05.png": "/grand-master-chess/static/media/ep02-q05.b12469b3483d4af83261.png",
+    "static/media/ep02-q10.png": "/grand-master-chess/static/media/ep02-q10.a56e0bf4c4f33656184e.png",
+    "static/media/ep02-q04.png": "/grand-master-chess/static/media/ep02-q04.252c75476df0ecd7b7e0.png",
+    "static/media/ep02-q07.png": "/grand-master-chess/static/media/ep02-q07.4db87f23d39bcd42f6b7.png",
+    "static/media/ep02-q06.png": "/grand-master-chess/static/media/ep02-q06.b1fa89a99ac94f5a1da4.png",
+    "static/media/ep02-q03.png": "/grand-master-chess/static/media/ep02-q03.7ad08f575408d19ba40d.png",
+    "static/media/ep02-q01.png": "/grand-master-chess/static/media/ep02-q01.389d64269ecfd9e0766d.png",
+    "static/media/ep02-q02.png": "/grand-master-chess/static/media/ep02-q02.41cf88fd47b1a94ae6ae.png",
+    "static/media/ep01-q02.png": "/grand-master-chess/static/media/ep01-q02.d5cf9a6de2fbc45a1da9.png",
+    "static/media/ep01-q10.png": "/grand-master-chess/static/media/ep01-q10.913a489204a6393e1aa1.png",
+    "static/media/ep01-q09.png": "/grand-master-chess/static/media/ep01-q09.61e838b8d91e6837016a.png",
+    "static/media/ep01-q01.png": "/grand-master-chess/static/media/ep01-q01.22ac7d2c329211f2fe2e.png",
+    "static/media/ep01-q08.png": "/grand-master-chess/static/media/ep01-q08.0c36ca579dbe959fe34f.png",
+    "static/media/ep01-q07.png": "/grand-master-chess/static/media/ep01-q07.8c5871b3e22a03fd6e83.png",
+    "static/media/ep01-q11.png": "/grand-master-chess/static/media/ep01-q11.d95d8dd70a800c3f3f08.png",
+    "static/media/ep01-q05.png": "/grand-master-chess/static/media/ep01-q05.0d57c6ed46379341c630.png",
+    "static/media/ep01-q04.png": "/grand-master-chess/static/media/ep01-q04.0a025ab943761897f15b.png",
+    "static/media/ep01-q06.png": "/grand-master-chess/static/media/ep01-q06.68010c0bdaf18d16d2a0.png",
+    "static/media/ep01-q03.png": "/grand-master-chess/static/media/ep01-q03.a08805b64a395e488f98.png",
+    "static/media/header.jpeg": "/grand-master-chess/static/media/header.b9d6d5aa5f5cd5c9bffb.jpeg",
     "index.html": "/grand-master-chess/index.html",
-    "main.64a3cf2e.css.map": "/grand-master-chess/static/css/main.64a3cf2e.css.map",
-    "main.f58c124a.js.map": "/grand-master-chess/static/js/main.f58c124a.js.map",
+    "main.c72eb5f1.css.map": "/grand-master-chess/static/css/main.c72eb5f1.css.map",
+    "main.37d5ccaa.js.map": "/grand-master-chess/static/js/main.37d5ccaa.js.map",
     "787.1e004568.chunk.js.map": "/grand-master-chess/static/js/787.1e004568.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64a3cf2e.css",
-    "static/js/main.f58c124a.js"
+    "static/css/main.c72eb5f1.css",
+    "static/js/main.37d5ccaa.js"
   ]
 }
