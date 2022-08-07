@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
-import { useLocation,useNavigate   } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Dimensions } from "react-native";
+import { Container } from "react-bootstrap";
 import "../App.css";
 import { episode1, episode2 } from "../shared/Questions";
 
@@ -39,7 +40,7 @@ function Quiz() {
 
   /* Resets the game back to default */
   const restartGame = () => {
-    navigate('/grand-master-chess');
+    navigate("/grand-master-chess");
   };
 
   const checkAnswer = (answer) => {
@@ -109,13 +110,15 @@ function Quiz() {
             {score} out of {questions.length} correct - (
             {(score / questions.length) * 100}%)
           </h2>
-          <button className="default-button" onClick={() => restartGame()}>Restart game</button>
+          <button className="default-button" onClick={() => restartGame()}>
+            Restart game
+          </button>
         </div>
       ) : (
         <div>
           <table>
             <tr>
-              <td style={{ maxWidth: screen_width * 0.08}}>
+              <td style={{ maxWidth: screen_width * 0.08 }}>
                 {/* Current Question  */}
                 <h1>
                   Question: {currentQuestion + 1} out of {questions.length}
@@ -128,82 +131,75 @@ function Quiz() {
             </tr>
           </table>
 
-          <table>
-            <tr>
-              <td style={{ maxWidth: screen_width * 0.05, overflow: "hidden" }}>
-                <img
-                  src={require(`../images/${questions[currentQuestion].image_path}.png`)}
-                  alt="Question"
-                />
-              </td>
-              <td style={{ maxWidth: screen_width * 0.05, display: "inline-block" }}>
-                <h2>{questions[currentQuestion].question}</h2>
-                {/* Options */}
-                <div className="button-row">
-                  <div className="option">
-                    <button
-                      ref={optionAref}
-                      className="option-button-default"
-                      onClick={() =>
-                        checkAnswer(questions[currentQuestion].options[0])
-                      }
-                    >
-                      {questions[currentQuestion].options[0].text}
-                    </button>
-                  </div>
-
-                  <div className="option">
-                    <button
-                      ref={optionBref}
-                      className="option-button-default"
-                      onClick={() =>
-                        checkAnswer(questions[currentQuestion].options[1])
-                      }
-                    >
-                      {questions[currentQuestion].options[1].text}
-                    </button>
-                  </div>
-                </div>
-
-                <div className="button-row">
-                  <div className="option">
-                    <button
-                      ref={optionCref}
-                      className="option-button-default"
-                      onClick={() =>
-                        checkAnswer(questions[currentQuestion].options[2])
-                      }
-                    >
-                      {questions[currentQuestion].options[2].text}
-                    </button>
-                  </div>
-
-                  <div className="option">
-                    <button
-                      ref={optionDref}
-                      className="option-button-default"
-                      onClick={() =>
-                        checkAnswer(questions[currentQuestion].options[3])
-                      }
-                    >
-                      {questions[currentQuestion].options[3].text}
-                    </button>
-                  </div>
-                </div>
-                <h3>{currentRemarks}</h3>
-                <div >
-            {showNextButton ? (
-              <button className="default-button" onClick={() => showNextQuestion()}>{buttonText}</button>
-            ) : (
-              <div></div>
-            )}
-          </div>
-              </td>
-            </tr>
-          </table>
-         
+          <Container>
+            <img
+              src={require(`../images/${questions[currentQuestion].image_path}.png`)}
+              alt="Question"
+              className="img-fluid"
+            />
+          </Container>
         </div>
       )}
+      <div>
+        <h2>{questions[currentQuestion].question}</h2>
+        {/* Options */}
+        <div className="button-row">
+          <div className="option">
+            <button
+              ref={optionAref}
+              className="option-button-default"
+              onClick={() => checkAnswer(questions[currentQuestion].options[0])}
+            >
+              {questions[currentQuestion].options[0].text}
+            </button>
+          </div>
+
+          <div className="option">
+            <button
+              ref={optionBref}
+              className="option-button-default"
+              onClick={() => checkAnswer(questions[currentQuestion].options[1])}
+            >
+              {questions[currentQuestion].options[1].text}
+            </button>
+          </div>
+        </div>
+
+        <div className="button-row">
+          <div className="option">
+            <button
+              ref={optionCref}
+              className="option-button-default"
+              onClick={() => checkAnswer(questions[currentQuestion].options[2])}
+            >
+              {questions[currentQuestion].options[2].text}
+            </button>
+          </div>
+
+          <div className="option">
+            <button
+              ref={optionDref}
+              className="option-button-default"
+              onClick={() => checkAnswer(questions[currentQuestion].options[3])}
+            >
+              {questions[currentQuestion].options[3].text}
+            </button>
+          </div>
+        </div>
+        <h3>{currentRemarks}</h3>
+        <div>
+          {showNextButton ? (
+            <button
+              className="default-button"
+              onClick={() => showNextQuestion()}
+            >
+              {buttonText}
+            </button>
+          ) : (
+            <div></div>
+          )}
+        </div>
+      </div>
 
       {/* Match  */}
       <h1>{state.match}</h1>
