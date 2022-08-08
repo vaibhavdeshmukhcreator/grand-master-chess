@@ -79,7 +79,8 @@ export const episode1 = [
   },
 
   {
-    question: "Although this was not played in the game, what is the best move here?", //3
+    question:
+      "Although this was not played in the game, what is the best move here?", //3
     image_path: "ep01-q03",
     options: [
       {
@@ -724,16 +725,16 @@ export const episode2 = [
       {
         id: 1,
         text: "♖ef6",
-        isPartiallyCorrect: false,
-        isCorrect: true,
-        comments: right_answer,
+        isPartiallyCorrect: true,
+        isCorrect: false,
+        comments: anirban_alike + but_partially,
       },
       {
         id: 2,
         text: "♖hf6",
-        isPartiallyCorrect: true,
-        isCorrect: false,
-        comments: vaibhav_alike + but_partially,
+        isPartiallyCorrect: false,
+        isCorrect: true,
+        comments: right_answer,
       },
       {
         id: 3,
