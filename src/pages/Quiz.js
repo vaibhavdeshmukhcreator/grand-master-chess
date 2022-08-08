@@ -138,68 +138,76 @@ function Quiz() {
               className="img-fluid"
             />
           </Container>
+          <div>
+            <h2>{questions[currentQuestion].question}</h2>
+            {/* Options */}
+            <div className="button-row">
+              <div className="option">
+                <button
+                  ref={optionAref}
+                  className="option-button-default"
+                  onClick={() =>
+                    checkAnswer(questions[currentQuestion].options[0])
+                  }
+                >
+                  {questions[currentQuestion].options[0].text}
+                </button>
+              </div>
+
+              <div className="option">
+                <button
+                  ref={optionBref}
+                  className="option-button-default"
+                  onClick={() =>
+                    checkAnswer(questions[currentQuestion].options[1])
+                  }
+                >
+                  {questions[currentQuestion].options[1].text}
+                </button>
+              </div>
+            </div>
+
+            <div className="button-row">
+              <div className="option">
+                <button
+                  ref={optionCref}
+                  className="option-button-default"
+                  onClick={() =>
+                    checkAnswer(questions[currentQuestion].options[2])
+                  }
+                >
+                  {questions[currentQuestion].options[2].text}
+                </button>
+              </div>
+
+              <div className="option">
+                <button
+                  ref={optionDref}
+                  className="option-button-default"
+                  onClick={() =>
+                    checkAnswer(questions[currentQuestion].options[3])
+                  }
+                >
+                  {questions[currentQuestion].options[3].text}
+                </button>
+              </div>
+            </div>
+            <h3>{currentRemarks}</h3>
+            <div>
+              {showNextButton ? (
+                <button
+                  className="default-button"
+                  onClick={() => showNextQuestion()}
+                >
+                  {buttonText}
+                </button>
+              ) : (
+                <div></div>
+              )}
+            </div>
+          </div>
         </div>
       )}
-      <div>
-        <h2>{questions[currentQuestion].question}</h2>
-        {/* Options */}
-        <div className="button-row">
-          <div className="option">
-            <button
-              ref={optionAref}
-              className="option-button-default"
-              onClick={() => checkAnswer(questions[currentQuestion].options[0])}
-            >
-              {questions[currentQuestion].options[0].text}
-            </button>
-          </div>
-
-          <div className="option">
-            <button
-              ref={optionBref}
-              className="option-button-default"
-              onClick={() => checkAnswer(questions[currentQuestion].options[1])}
-            >
-              {questions[currentQuestion].options[1].text}
-            </button>
-          </div>
-        </div>
-
-        <div className="button-row">
-          <div className="option">
-            <button
-              ref={optionCref}
-              className="option-button-default"
-              onClick={() => checkAnswer(questions[currentQuestion].options[2])}
-            >
-              {questions[currentQuestion].options[2].text}
-            </button>
-          </div>
-
-          <div className="option">
-            <button
-              ref={optionDref}
-              className="option-button-default"
-              onClick={() => checkAnswer(questions[currentQuestion].options[3])}
-            >
-              {questions[currentQuestion].options[3].text}
-            </button>
-          </div>
-        </div>
-        <h3>{currentRemarks}</h3>
-        <div>
-          {showNextButton ? (
-            <button
-              className="default-button"
-              onClick={() => showNextQuestion()}
-            >
-              {buttonText}
-            </button>
-          ) : (
-            <div></div>
-          )}
-        </div>
-      </div>
 
       {/* Match  */}
       <h1>{state.match}</h1>
