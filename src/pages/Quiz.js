@@ -116,94 +116,87 @@ function Quiz() {
         </div>
       ) : (
         <div>
-          <table>
-            <tr>
-              <td style={{ maxWidth: screen_width * 0.08 }}>
-                {/* Current Question  */}
-                <h1>
-                  Question: {currentQuestion + 1} out of {questions.length}
-                </h1>
-              </td>
-              <td style={{ maxWidth: screen_width * 0.02 }}>
-                {/* Current Score  */}
-                <h2>Score: {score}</h2>
-              </td>
-            </tr>
-          </table>
-
-          <Container>
-            <img
-              src={require(`../images/${questions[currentQuestion].image_path}.png`)}
-              alt="Question"
-              className="img-fluid"
-            />
-          </Container>
-          <div>
-            <h2>{questions[currentQuestion].question}</h2>
-            {/* Options */}
-            <div className="button-row">
-              <div className="option">
-                <button
-                  ref={optionAref}
-                  className="option-button-default"
-                  onClick={() =>
-                    checkAnswer(questions[currentQuestion].options[0])
-                  }
-                >
-                  {questions[currentQuestion].options[0].text}
-                </button>
-              </div>
-
-              <div className="option">
-                <button
-                  ref={optionBref}
-                  className="option-button-default"
-                  onClick={() =>
-                    checkAnswer(questions[currentQuestion].options[1])
-                  }
-                >
-                  {questions[currentQuestion].options[1].text}
-                </button>
-              </div>
-            </div>
-
-            <div className="button-row">
-              <div className="option">
-                <button
-                  ref={optionCref}
-                  className="option-button-default"
-                  onClick={() =>
-                    checkAnswer(questions[currentQuestion].options[2])
-                  }
-                >
-                  {questions[currentQuestion].options[2].text}
-                </button>
-              </div>
-
-              <div className="option">
-                <button
-                  ref={optionDref}
-                  className="option-button-default"
-                  onClick={() =>
-                    checkAnswer(questions[currentQuestion].options[3])
-                  }
-                >
-                  {questions[currentQuestion].options[3].text}
-                </button>
-              </div>
-            </div>
-            <h3>{currentRemarks}</h3>
+          <div className="flexbox-container">
+            <h1>
+              Question: {currentQuestion + 1} out of {questions.length}
+            </h1>
+            <h2>Score: {score}</h2>
+          </div>
+          <div className="flexbox-container">
+            <Container>
+              <img
+                src={require(`../images/${questions[currentQuestion].image_path}.png`)}
+                alt="Question"
+                className="img-fluid"
+              />
+            </Container>
             <div>
-              {showNextButton ? (
-                <button
-                  className="default-button"
-                  onClick={() => showNextQuestion()}
-                >
-                  {buttonText}
-                </button>
-              ) : (
-                <div></div>
-              )}
+              <h2>{questions[currentQuestion].question}</h2>
+              {/* Options */}
+              <div className="button-row">
+                <div className="option">
+                  <button
+                    ref={optionAref}
+                    className="option-button-default"
+                    onClick={() =>
+                      checkAnswer(questions[currentQuestion].options[0])
+                    }
+                  >
+                    {questions[currentQuestion].options[0].text}
+                  </button>
+                </div>
+
+                <div className="option">
+                  <button
+                    ref={optionBref}
+                    className="option-button-default"
+                    onClick={() =>
+                      checkAnswer(questions[currentQuestion].options[1])
+                    }
+                  >
+                    {questions[currentQuestion].options[1].text}
+                  </button>
+                </div>
+              </div>
+
+              <div className="button-row">
+                <div className="option">
+                  <button
+                    ref={optionCref}
+                    className="option-button-default"
+                    onClick={() =>
+                      checkAnswer(questions[currentQuestion].options[2])
+                    }
+                  >
+                    {questions[currentQuestion].options[2].text}
+                  </button>
+                </div>
+
+                <div className="option">
+                  <button
+                    ref={optionDref}
+                    className="option-button-default"
+                    onClick={() =>
+                      checkAnswer(questions[currentQuestion].options[3])
+                    }
+                  >
+                    {questions[currentQuestion].options[3].text}
+                  </button>
+                </div>
+              </div>
+              <h3>{currentRemarks}</h3>
+              <div>
+                {showNextButton ? (
+                  <button
+                    className="default-button"
+                    onClick={() => showNextQuestion()}
+                  >
+                    {buttonText}
+                  </button>
+                ) : (
+                  <div></div>
+                )}
+              </div>
             </div>
           </div>
         </div>

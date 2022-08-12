@@ -93,6 +93,10 @@ table {
 
 header {
   background: black;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden; 
 }
 
 .topnav-right {
@@ -106,4 +110,10 @@ header {
 
 .content {
   padding: 16px;
+}
+
+.flexbox-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
