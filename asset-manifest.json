@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/grand-master-chess/static/css/main.758c1129.css",
-    "main.js": "/grand-master-chess/static/js/main.5c7ad044.js",
+    "main.css": "/grand-master-chess/static/css/main.c414d638.css",
+    "main.js": "/grand-master-chess/static/js/main.60584b2c.js",
     "static/js/787.1e004568.chunk.js": "/grand-master-chess/static/js/787.1e004568.chunk.js",
     "static/media/ep02-q09.png": "/grand-master-chess/static/media/ep02-q09.74a2ca7243e60d934f52.png",
     "static/media/ep02-q08.png": "/grand-master-chess/static/media/ep02-q08.8239fc25e9cd06848d62.png",
@@ -26,12 +26,12 @@
     "static/media/ep01-q03.png": "/grand-master-chess/static/media/ep01-q03.a08805b64a395e488f98.png",
     "static/media/header.jpeg": "/grand-master-chess/static/media/header.b9d6d5aa5f5cd5c9bffb.jpeg",
     "index.html": "/grand-master-chess/index.html",
-    "main.758c1129.css.map": "/grand-master-chess/static/css/main.758c1129.css.map",
-    "main.5c7ad044.js.map": "/grand-master-chess/static/js/main.5c7ad044.js.map",
+    "main.c414d638.css.map": "/grand-master-chess/static/css/main.c414d638.css.map",
+    "main.60584b2c.js.map": "/grand-master-chess/static/js/main.60584b2c.js.map",
     "787.1e004568.chunk.js.map": "/grand-master-chess/static/js/787.1e004568.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.758c1129.css",
-    "static/js/main.5c7ad044.js"
+    "static/css/main.c414d638.css",
+    "static/js/main.60584b2c.js"
   ]
 }
