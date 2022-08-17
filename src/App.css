@@ -93,10 +93,9 @@ table {
 
 header {
   background: black;
-  max-width: 100%;
-  box-sizing: border-box;
-  overflow-y: hidden;
-  overflow-x: hidden; 
+  max-width: 100% !important;
+  margin-left: 0!important;
+  margin-right: 0!important;
 }
 
 .topnav-right {
@@ -112,8 +111,25 @@ header {
   padding: 16px;
 }
 
-.flexbox-container{
+.flex-container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }

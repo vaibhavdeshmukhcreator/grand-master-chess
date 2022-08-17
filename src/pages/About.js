@@ -9,7 +9,11 @@ function About() {
       </h2>
       <h3>
         Play this quiz to have same fun which comedians had during the{" "}
-        <a href="https://www.youtube.com/watch?v=OTRnnUPcZCE&list=PL9WYcwsWaJ7owjsIjNDQwdfQ8ZBNRbsTi&ab_channel=ChessBaseIndia">
+        <a
+          href="https://www.youtube.com/watch?v=OTRnnUPcZCE&list=PL9WYcwsWaJ7owjsIjNDQwdfQ8ZBNRbsTi&ab_channel=ChessBaseIndia"
+          target="_blank"
+          rel="noreferrer"
+        >
           YouTube streams
         </a>
       </h3>

@@ -1,12 +1,9 @@
 import React, { useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Dimensions } from "react-native";
-import { Container } from "react-bootstrap";
 import "../App.css";
 import { episode1, episode2 } from "../shared/Questions";
 
 function Quiz() {
-  const { height, screen_width } = Dimensions.get("window");
   const location = useLocation();
   const state = location.state;
   const navigate = useNavigate();
@@ -116,21 +113,21 @@ function Quiz() {
         </div>
       ) : (
         <div>
-          <div className="flexbox-container">
-            <h1>
+          <div className="flex-container">
+            <h1 className="flex-item-left">
               Question: {currentQuestion + 1} out of {questions.length}
             </h1>
-            <h2>Score: {score}</h2>
+            <h2 className="flex-item-right">Score: {score}</h2>
           </div>
-          <div className="flexbox-container">
-            <Container>
+          <div className="flex-container">
+            <div className="flex-item-left">
               <img
                 src={require(`../images/${questions[currentQuestion].image_path}.png`)}
                 alt="Question"
-                className="img-fluid"
               />
-            </Container>
-            <div>
+            </div>
+
+            <div className="flex-item-right">
               <h2>{questions[currentQuestion].question}</h2>
               {/* Options */}
               <div className="button-row">
