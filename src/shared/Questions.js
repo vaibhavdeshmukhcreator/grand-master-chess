@@ -521,7 +521,7 @@ export const episode2 = [
       },
       {
         id: 2,
-        text: "♘e4",
+        text: "♘de4",
         isPartiallyCorrect: false,
         isCorrect: false,
         comments: samay_alike + but_wrong,
